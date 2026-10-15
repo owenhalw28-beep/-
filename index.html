@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="林知远的个人主页：保持好奇，热爱设计与技术，用简单的方式记录生活与成长。">
+  <title>个人主页 · 林知远</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232563eb'/%3E%3Cpath d='M22 18v28h22' fill='none' stroke='white' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+      color: #183153;
+      background-color: #eef5ff;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      margin: 0;
+      padding: clamp(16px, 4vw, 40px);
+      background: radial-gradient(ellipse at 50% 0%, #ffffff, transparent 75%), #eef5ff;
+    }
+
+    main {
+      width: min(100%, 720px);
+      min-width: 0;
+      padding: clamp(32px, 8vw, 72px);
+      border: 1px solid #dbe7f8;
+      border-top: 4px solid #2563eb;
+      border-radius: 20px;
+      background: #ffffff;
+      box-shadow: 0 20px 64px rgba(30, 64, 120, 0.07);
+      overflow-wrap: anywhere;
+    }
+
+    .page-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0 0 40px;
+      color: #285fc4;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      line-height: 1.6;
+      letter-spacing: 0.12em;
+    }
+
+    .page-title::before {
+      content: "";
+      width: 24px;
+      height: 2px;
+      flex-shrink: 0;
+      background: currentColor;
+    }
+
+    h1 {
+      margin: 0;
+      color: #2563eb;
+      font-size: clamp(3rem, 10vw, 5rem);
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    .greeting {
+      display: block;
+      margin-bottom: 10px;
+      color: #183153;
+      font-size: 1.25rem;
+      font-weight: 400;
+      line-height: 1.6;
+    }
+
+    .introduction {
+      margin: 32px 0 0;
+      padding-top: 28px;
+      border-top: 1px solid #e3ecf8;
+      color: #52647e;
+      font-size: 1.0625rem;
+      line-height: 1.95;
+    }
+
+    ::selection {
+      color: #183153;
+      background: #dbeafe;
+    }
+
+    @media (max-width: 480px) {
+      main {
+        border-radius: 16px;
+      }
+
+      .page-title {
+        margin-bottom: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main aria-labelledby="name">
+    <p class="page-title">个人主页</p>
+    <h1 id="name"><span class="greeting">你好，我是</span>林知远</h1>
+    <p class="introduction">保持好奇，热爱设计与技术，用简单的方式记录生活与成长。</p>
+  </main>
+</body>
+</html>
